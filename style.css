@@ -1,79 +1,53 @@
-/* /* div{
-    width: 200px;
-    text-align: center;
-    height: 200px;
-    background-color: rgb(53, 170, 115);
-    margin: 20px;
-    /* box-shadow: 0 0 10px 0 red , 0 0 10px 0 rgb(7, 233, 146); */
-    /*border-radius: 10px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-top-left-radius: 20px;
-    *//*.a{
-    background-color: blue !important;
-    color: brown;
-}border-bottom-right-radius: 15px;
-    /* *
+/* *{
+    box-sizing:border-box;
 } */
-
-/* div {
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-    background-color: gold;
-    /* border: 1px solid red; */
-    /* transition-duration: 3s; */
-    /* transition-delay: 50ms;
-    transition-property:all;
-    transition-timing-function: linear;
-} */
-
-/* .tr:hover{
-    /* margin-left: 50px; */
-    /* margin-top: 30px;
-    width: 500px;
-    height: 500px; */
-    /* color: blue;
-    background-color: rgb(70, 139, 61); */
-/* } */ 
-:root{
-    --mainColor:blue;
-}
-
-.main{
-    width: 500px;
-    height: 50px;
-    background-color:var(--mainColor,red);
-    /* background-color: red; */
-    color:var(var(mainColor));
-    text-align: left;
-    padding: 20px;
-
-}
-.Title{
-    width: 500px;
-    height: 50px;
-    background-color:var(--mainColor,green);
-    color:var(var (mainColor));
-    /* border: 2px solid green; */
-        text-align: left;
-            padding: 20px;
-
+.flex  {
+   background-color: rgb(218, 22, 22);
+   width: 600px;
+   color: blue;
+   height: 100px;
+   padding: 20px;
+   margin: 20px auto;
+   display: flex;
+direction: ltr;
+      flex-direction: row;
+      /* flex-wrap: wrap; */
+         justify-content: space-evenly;
 
 
 }
-.Paragraph{
-    width: 500px;
-    height: 30px;
-    background-color:var(--mainColor,blue);
-    color: rgb(11, 12, 11);
-    border: 2px solid var(var(mainColor));
-        text-align: left;
-            padding: 20px;
+
+.flex div {
+   background-color: aqua;
+   width:calc(83%/3) ;
+   overflow: hidden;
+   text-align: center;
+   margin-left: 5px;
+   margin-top: 5px;
+}
+
+.float  {
+   background-color: rgb(218, 22, 22);
+   width: 600px;
+   padding: 20px;
+   margin: 20px auto;
+   display: flex;
+   direction: ltr;
+   float: left;
+   flex-direction: row;
+   flex-wrap: wrap;
+            justify-content: space-between;
+
+}
 
 
+.float div {
+   background-color: aqua;
+   width:calc(94%/3);
+   float: left;
+   overflow: hidden;
+      margin-top: 5px;
 
+   text-align: center;
+   margin-left: 5px;
 }
